@@ -2,9 +2,9 @@
 
 pacman -S fio 
 
-mkfs.ext4 /dev/sda
-mkfs.xfs /dev/sdb
-mkfs.btrfs /dev/sdc
+mkfs.ext4 -f /dev/sda
+mkfs.xfs -F /dev/sdb
+mkfs.btrfs -f /dev/sdc
 
 mkdir /mnt/ext4
 mkdir /mnt/xfs
